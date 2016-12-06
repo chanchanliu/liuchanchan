@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Myapp"><!-- 定义项目入口名 -->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>    
+<body>
+	<header class="header">
+		<div class="span12 backbg-color">
+		    <div class="col-xs-2 ">
+		    	<a href="#"><i class="fa fa-bell-o fa-lg"></i></a>
+		    </div>
+		    <div class="col-xs-8 ">
+				<p><i class="fa fa-search"></i><input type="text" placeholder="输入商品关键词或用户名"></p>
+		    </div>
+		    <div class="col-xs-2 ">
+				<a href="#"><i class="fa fa-cart-plus fa-lg"></i></a>
+		    </div>
+		</div>
+	</header>
+	<section class="container">
+		<div class=" main_title">
+			<ul ng-controller="nav">	
+			    <li class="col-xs-3" ng-repeat="i in arr1">
+			    	{{ i.title }}
+			    </li>
+			</ul>
+		</div>
+		<div class="span12 main_img" ng-controller="main_img">
+			<a href="#img" ng-repeat="i in arr">
+				<img src='{{ i.img }}' alt="">
+				<h2>{{i.title}}</h2>
+				<h6>From <span>{{i.author}}</span></h6>
+				<p><i class="fa fa-heart"></i><span>{{ i.heart }}</span><i class="fa fa-eye changeColor"></i><span>{{ i.look }}</span></p>
+			</a>
+		</div>
+	</section>
+	<footer class="footer">
+		<ul class="span12 footer_ul">
+			<li class="changeColor"><a href="#"><i class="fa fa-home"></i><p>首页</p></a></li>
+			<li><a href="#"><i class="fa fa-camera"></i><p>体验师</p></a></li>
+			<li><a href="#"><i class="fa fa-road"></i><p>商店</p></a></li>
+			<li><a href="#"><i class="fa fa-file-text"></i><p>话题</p></a></li>
+			<li><a href="#"><i class="fa fa-dot-circle-o"></i><p>我</p></a></li>
+		</ul>
+	</footer>
+</body>
+<script type="text/javascript" src="./js/angular.min.js"></script>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+<script type="text/javascript" src="./js/controller.js"></script>
+</html>

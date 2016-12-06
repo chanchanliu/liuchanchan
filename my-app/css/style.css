@@ -1,0 +1,151 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body ,html{
+	color:#6F7478;
+	font-family: '微软雅黑', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+}
+ul, li, a{
+	padding: 0px;
+	margin: 0px;
+}
+ul,li{
+	list-style:none;
+}
+a{
+	color: rgba(101, 196, 170, 0.72);
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	color: #65c4aa;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 300;
+}
+h2{
+	color:#555;
+	font-size: 24px;
+	padding: 0px;
+	margin: 0px;
+}
+h3{
+	font-weight: 300;
+	padding: 0px;
+	margin: 0px;
+}
+img{
+	width: 100%;
+}
+hr{
+	width: 50px;
+	height: 5px;
+	background-color: #F84B4A;
+	margin-bottom: 50px;
+	border: none;
+}
+/*----------------------------------header---------------------------------*/
+.header{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.header div input{
+	width:80%;
+	border:none;
+	outline:none;
+	padding-left:10px;
+}
+/*----------------------------------container---------------------------------*/
+.container{
+	width:100%;
+	position:absolute;
+	top:40px;
+	bottom:40px;
+	overflow-y:scroll ;
+}
+.container .main_title ul{
+	width:100%;
+	height:38px;
+	line-height: 38px;
+	border-bottom:solid 1px #dcdde3;
+}
+.container .main_title ul li:nth-of-type(2){
+	color: #65c4aa;
+	border-bottom:solid 2px #65c4aa;
+}
+.container .main_img{
+	padding:15px;
+}
+.container .main_img img{
+	margin-bottom:25px;
+}
+.container .main_img h2{
+	font-size: 20px;
+	font-weight:400;
+	margin-bottom:25px;
+}
+.container .main_img h6{
+	font-size: 14px;
+	font-weight:400;
+	margin-bottom:25px;
+	color:#6F7478;
+}
+.container .main_img h6 span{
+	font-size: 14px;
+	font-weight:400;
+	margin-bottom:25px;
+	color:#617f57;
+}
+.container .main_img p span{
+	font-size: 14px;
+	font-weight:400;
+	margin-bottom:25px;
+	color:#6F7478;
+}
+.container .main_img p i{
+	font-size: 20px;
+	display: inline-block;
+	margin:5px;
+	color:#6F7478;
+}
+.container .main_img p i:hover
+{
+	color: #65c4aa;
+}
+/*----------------------------------footer---------------------------------*/
+.footer{
+	width:100%;
+	background:#fff;
+	position:absolute;
+	left:0;
+	bottom:0;
+	border-top: solid 1px #acacad;
+	padding-top: 8px;
+}
+.footer_ul{
+	width:100%;
+	display: flex;
+}
+.footer_ul li{
+	flex:1;
+	text-align: center;
+}
+.footer_ul li a{
+	color:#9c9da7;
+}
+.footer_ul li a i{
+	font-size:20px;
+}
+.changeColor,.changeColor a,.changeColor a i,.changeColor a p{
+	color: #65c4aa;
+}
+.footer_ul li a i:hover{
+	color: #65c4aa;
+}
